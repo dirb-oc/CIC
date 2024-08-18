@@ -33,9 +33,6 @@ body{
     background-color: var(--Fichero);
 }
 
-#Calculadora{
-    height: 890px;
-}
 
 .Titulo{
     color: var(--Texto);
