@@ -39,13 +39,16 @@ document.addEventListener('DOMContentLoaded', function() {
         let tasa = parseFloat(Tasa.value);
         let abonos = parseFloat(Abonos.value);
         
-        const Contenedor = document.getElementById('Contenedor');
+        const Contenedor = document.getElementById('Oculto');
         const Calculadora = document.getElementById('Calculadora');
 
         if ((!isNaN(cantidad) || !isNaN(abonos)) && !isNaN(tiempo) && !isNaN(tasa)) {
             
-            Contenedor.style.display = 'grid';
-            Calculadora.style.height = '100%';
+            Calculadora.classList.add('subido');
+            
+            setTimeout(() => {
+                Contenedor.classList.add('visible');
+            }, 1000);
 
             if (isNaN(cantidad)) cantidad = 0;
             if (isNaN(abonos)) abonos = 0;

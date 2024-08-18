@@ -102,13 +102,27 @@ input[type=number]::-webkit-inner-spin-button {
     margin: 0;
 }
 
-#Contenedor{
+.Contenedor{
     margin-top: 100px;
     width: 80%;
-    display: none;
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     overflow: hidden;
+}
+
+#Oculto{
+    display: none;
+    opacity: 0;
+}
+
+#Calculadora.subido {
+    transform: translateY(10%);
+    height: 100%;
+}
+
+#Oculto.visible {
+    display: grid;
+    opacity: 1;
 }
 
 .Resultado{
