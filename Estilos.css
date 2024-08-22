@@ -33,9 +33,6 @@ body{
     background-color: var(--Fichero);
 }
 
-#Calculadora{
-    height: 890px;
-}
 
 .Titulo{
     color: var(--Texto);
@@ -148,6 +145,38 @@ input[type=number]::-webkit-inner-spin-button {
 .Clase{
     font-size: 40px;
     color: var(--Texto);
+}
+
+.Resultados{
+    margin-top: 25px;
+    color: black;
+    font-size: 35px;
+}
+
+.Tabla{
+    border-collapse: collapse;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.T-Cabezera{
+    background: black;
+    color: white;
+}
+
+.T-Cabezera th{
+    font-size: 24px;
+    padding: 10px 20px 10px 20px;
+}
+
+#tbody{
+    text-align: center;
+    background: white;
+}
+
+#tbody td{
+    font-size: 24px;
+    padding: 10px;
 }
 
 #Footer{
