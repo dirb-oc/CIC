@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos.css">
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="Src/dinero.png" type="image/x-icon">
+</head>
+<body>
+    <div class="Centrar Inicial" id="Calculadora">
+        <section class="Seccion">
+            <h2 class="Titulo">Calculadora</h2>
+                <div class="Caja">
+                    <input type="number"  placeholder="" id="Cantidad">
+                    <label for="apple-id">Cantidad</label>
+                </div>
+                <div class="Caja">
+                    <input type="number"  placeholder="" id="Tiempo" maxlength="3">
+                    <label for="apple-id">Tiempo</label>
+                </div>
+                <div class="Caja">
+                    <input type="number"  placeholder="" id="Tasa">
+                    <label for="apple-id">Tasa</label>
+                </div>
+                <div class="Caja">
+                    <input type="number"  placeholder="" id="Abono">
+                    <label for="apple-id">Aportes Anuales</label>
+                </div>
+        </section>
+    </div>
+    <div class="centrar">
+    <div class="Contenedor" id="Oculto">
+            <article class="Resultado">
+                <span class="Numero" id="Acumulado">$0</span>
+                <p class="Clase">Cantidad Invertida</p>
+            </article>
+            <article class="Resultado">
+                <span class="Numero" id="Ganancia">$0</span>
+                <p class="Clase">Interes Acumulado</p>
+            </article>
+            <article class="Resultado">
+                <span class="Numero" id="Porcentaje">0%</span>
+                <p class="Clase">Porciento</p>
+            </article>
+            <article class="Resultado">
+                <p class="Numero" id="Informacion">$0</p>
+                <p class="Clase">Total</p>
+            </article>
+            <button id="Tabla"">Resultados por Año</button>
+        </div>
+    </div>
+
+    <footer id="Footer">
+        <a href="https://github.com/dirb-oc">©Dirb</a>
+    </footer>
+
+    <script src="Scrip.js"></script>
+</body>
+</html>
