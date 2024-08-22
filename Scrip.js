@@ -87,11 +87,14 @@ document.addEventListener('DOMContentLoaded', function() {
             Ganancia.textContent = `$${Valor2}`;
             Acumulado.textContent = `$${Cantidad_Total}`;
             Porcentaje.textContent = `${Porciento}%`;
+        
         } else {
+        
             Total.textContent = '$0';
             Ganancia.textContent = '$0';
             Porcentaje.textContent = '0%';
             Acumulado.textContent = `$0`;
+
         }
     }
 

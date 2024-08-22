@@ -147,6 +147,38 @@ input[type=number]::-webkit-inner-spin-button {
     color: var(--Texto);
 }
 
+.Resultados{
+    margin-top: 25px;
+    color: black;
+    font-size: 35px;
+}
+
+.Tabla{
+    border-collapse: collapse;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.T-Cabezera{
+    background: black;
+    color: white;
+}
+
+.T-Cabezera th{
+    font-size: 24px;
+    padding: 10px 20px 10px 20px;
+}
+
+#tbody{
+    text-align: center;
+    background: white;
+}
+
+#tbody td{
+    font-size: 24px;
+    padding: 10px;
+}
+
 #Footer{
     color: white;
     background: var(--Footer);
