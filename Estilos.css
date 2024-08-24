@@ -103,6 +103,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .Contenedor{
+    display: grid;
     margin-top: 100px;
     width: 80%;
     place-items: center;
@@ -110,18 +111,13 @@ input[type=number]::-webkit-inner-spin-button {
     overflow: hidden;
 }
 
-#Oculto{
-    display: none;
-    opacity: 0;
-}
-
 #Calculadora.subido{
     height: 100%;
 }
 
-#Oculto.visible {
-    display: grid;
-    opacity: 1;
+.Oculto{
+    display: none;
+    opacity: 0;
 }
 
 .Resultado{
@@ -155,6 +151,43 @@ input[type=number]::-webkit-inner-spin-button {
     font-size: 35px;
 }
 
+.Boton button{
+    background: var(--Footer);
+    color: var(--Texto_Secundario);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin-top: 35px;
+    transition: 0.4s;
+}
+
+button:hover{
+    background: var(--Texto_Secundario);
+    border: 1px solid var(--Footer);
+    color: var(--Footer);
+}
+
+#Footer{
+    color: white;
+    background: var(--Footer);
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+    position: absolute;
+}
+
+#Footer a{
+    font-size: 23px;
+    color: var(--Texto_Secundario);
+    text-decoration: none;
+}
+
+/*Tablas*/
 .Tabla{
     border-collapse: collapse;
     width: 50%;
@@ -179,22 +212,4 @@ input[type=number]::-webkit-inner-spin-button {
 #tbody td{
     font-size: 24px;
     padding: 10px;
-}
-
-#Footer{
-    color: white;
-    background: var(--Footer);
-    width: 100%;
-    height: 65px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 0px;
-    position: absolute;
-}
-
-#Footer a{
-    font-size: 23px;
-    color: var(--Texto_Secundario);
-    text-decoration: none;
 }
