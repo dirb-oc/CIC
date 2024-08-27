@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             const Incremento = Math.round(resultado - cantidad);
-            const Porciento = Math.round((Incremento * 100) / resultado);
             const acu = (tiempo * abonos) + cantidad;
+            const Porciento = Math.round((Incremento * 100) / acu);
             const valor = resultado.toLocaleString('es-ES');
             const Valor2 = Incremento.toLocaleString('es-ES');
             const Cantidad_Total = acu.toLocaleString('es-ES');
