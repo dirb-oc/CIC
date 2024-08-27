@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     Tiempo: (i + 1),
                     Aporte: parseFloat(Inversion.toFixed(2)),
                     Interes: parseFloat(Interes.toFixed(2)), // Interés acumulado para el periodo i
-                    AporteT: (abonos * (i + 1)) + abonos, // Aporte total sumado en cada periodo
+                    AporteT: (abonos * (i + 1)), // Aporte total sumado en cada periodo
                     Total: parseFloat(resultado.toFixed(2)) 
                 });
                 
