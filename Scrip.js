@@ -71,10 +71,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 Datos.push({
                     Tiempo: (i + 1),
-                    Aporte: parseFloat(Inversion.toFixed(2)),
-                    Interes: parseFloat(Interes.toFixed(2)), // Interés acumulado para el periodo i
-                    AporteT: (abonos * (i + 1)), // Aporte total sumado en cada periodo
-                    Total: parseFloat(resultado.toFixed(2)) 
+                    Aporte: (parseFloat(Inversion.toFixed(2))).toLocaleString('es-ES'),
+                    Interes: (parseFloat(Interes.toFixed(2))).toLocaleString('es-ES'), // Interés acumulado para el periodo i
+                    AporteT: (abonos * (i + 1)).toLocaleString('es-ES'), // Aporte total sumado en cada periodo
+                    Total: (parseFloat(resultado.toFixed(2))).toLocaleString('es-ES') 
                 });
                 
             }
