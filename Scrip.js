@@ -63,20 +63,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
             Datos = [];
             for (let i = 0; i < tiempo; i++) {
-                resultado += (resultado * (tasa / 100));
-
-                let Interes = 0;
-                if (resultado > 0) {
-                    Interes = resultado * (tasa / 100); // Cálculo de interés para el periodo
-                }
+                let Interes = (resultado * (tasa / 100));
+                let Inversion = resultado;
+                resultado += (resultado * (tasa / 100)); 
 
                 resultado += abonos;
 
                 Datos.push({
                     Tiempo: (i + 1),
-                    Aporte: abonos * (i + 1), // Abono acumulado hasta el periodo i
+                    Aporte: parseFloat(Inversion.toFixed(2)),
                     Interes: parseFloat(Interes.toFixed(2)), // Interés acumulado para el periodo i
-                    AporteT: abonos * (i + 1) + abonos, // Aporte total sumado en cada periodo
+                    AporteT: (abonos * (i + 1)) + abonos, // Aporte total sumado en cada periodo
                     Total: parseFloat(resultado.toFixed(2)) 
                 });
                 
